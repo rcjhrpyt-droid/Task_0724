@@ -63,12 +63,6 @@ Stage 2: Conv1D + Transformer
 
 > 总耗时：2352s (39.2 min)
 
-### 关键发现
-
-- **GBLUP 整体最优**（PCC=0.434），Transformer 残差修正未带来系统性改善
-- **env1** 残差中存在微弱非加性信号（Resid PCC=0.26），GBLUP+Transformer 提升了 +0.032
-
-
 ---
 
 ## 快速开始
