@@ -1,4 +1,4 @@
-# GBLUP-Residual Transformer （GBT） — Wheat599 10-Fold CV
+# GBLUP-Residual Transformer （GBT）
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)](https://pytorch.org)
