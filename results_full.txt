@@ -1,0 +1,95 @@
+GBLUP-Residual Transformer — Wheat599 10-Fold CV
+======================================================================
+Device: cpu
+Arch: GBLUP → Residuals → Conv1D+Transformer → MC Dropout
+Conv1D: 1279→106 tokens, Transformer: 2L×4H, MC: 30samples
+p threshold: 0.05, h2 prior: 0.5
+
+
+======================================================================
+  ENV1 — GBLUP-Residual Transformer
+======================================================================
+
+  Fold  1/10 | GBLUP PCC=0.4437 RMSE=0.9283 | GBT PCC=0.5610 RMSE=0.8376 | Δ=+0.1172 | Resid PCC=0.4370 | Accept=90.0% | Ep=73
+  Fold  2/10 | GBLUP PCC=0.5053 RMSE=0.8472 | GBT PCC=0.5455 RMSE=0.7888 | Δ=+0.0401 | Resid PCC=0.3491 | Accept=98.3% | Ep=32
+  Fold  3/10 | GBLUP PCC=0.3904 RMSE=0.8290 | GBT PCC=0.3520 RMSE=0.8599 | Δ=-0.0384 | Resid PCC=0.1431 | Accept=91.7% | Ep=45
+  Fold  4/10 | GBLUP PCC=0.3240 RMSE=0.8728 | GBT PCC=0.5041 RMSE=0.8115 | Δ=+0.1800 | Resid PCC=0.3997 | Accept=91.7% | Ep=33
+  Fold  5/10 | GBLUP PCC=0.5957 RMSE=1.0139 | GBT PCC=0.6154 RMSE=0.9983 | Δ=+0.0197 | Resid PCC=0.3070 | Accept=96.7% | Ep=8
+  Fold  6/10 | GBLUP PCC=0.3139 RMSE=0.9258 | GBT PCC=0.3032 RMSE=0.9507 | Δ=-0.0107 | Resid PCC=0.1135 | Accept=91.7% | Ep=42
+  Fold  7/10 | GBLUP PCC=0.4493 RMSE=0.9183 | GBT PCC=0.4630 RMSE=0.9002 | Δ=+0.0137 | Resid PCC=0.2237 | Accept=91.7% | Ep=28
+  Fold  8/10 | GBLUP PCC=0.4954 RMSE=0.9539 | GBT PCC=0.4970 RMSE=0.9221 | Δ=+0.0015 | Resid PCC=0.3566 | Accept=90.0% | Ep=52
+  Fold  9/10 | GBLUP PCC=0.5059 RMSE=0.9277 | GBT PCC=0.5011 RMSE=0.9171 | Δ=-0.0048 | Resid PCC=0.1937 | Accept=71.7% | Ep=3
+  Fold 10/10 | GBLUP PCC=0.4401 RMSE=0.9000 | GBT PCC=0.4400 RMSE=0.8867 | Δ=-0.0001 | Resid PCC=0.0746 | Accept=72.9% | Ep=4
+
+  >>> ENV1 Summary (824s)
+  GBLUP:    PCC = 0.4464 +/- 0.0821  |  RMSE = 0.9117 +/- 0.0506
+  GBT:      PCC = 0.4782 +/- 0.0894  |  RMSE = 0.8873 +/- 0.0611
+  Δ PCC:    +0.0318 +/- 0.0631
+  Resid PCC:0.2598
+  Accept:   88.6%
+
+======================================================================
+  ENV2 — GBLUP-Residual Transformer
+======================================================================
+
+  Fold  1/10 | GBLUP PCC=0.4763 RMSE=0.7503 | GBT PCC=0.4479 RMSE=0.7572 | Δ=-0.0284 | Resid PCC=-0.2140 | Accept=88.3% | Ep=1
+  Fold  2/10 | GBLUP PCC=0.3680 RMSE=0.9654 | GBT PCC=0.3287 RMSE=0.9708 | Δ=-0.0393 | Resid PCC=-0.1072 | Accept=68.3% | Ep=11
+  Fold  3/10 | GBLUP PCC=0.5120 RMSE=0.9669 | GBT PCC=0.4487 RMSE=0.9833 | Δ=-0.0633 | Resid PCC=-0.1717 | Accept=78.3% | Ep=4
+  Fold  4/10 | GBLUP PCC=0.4229 RMSE=0.8950 | GBT PCC=0.4195 RMSE=0.8834 | Δ=-0.0034 | Resid PCC=0.0785 | Accept=76.7% | Ep=8
+  Fold  5/10 | GBLUP PCC=0.4730 RMSE=0.7923 | GBT PCC=0.4636 RMSE=0.7990 | Δ=-0.0094 | Resid PCC=-0.0127 | Accept=98.3% | Ep=1
+  Fold  6/10 | GBLUP PCC=0.4712 RMSE=0.9264 | GBT PCC=0.4724 RMSE=0.9275 | Δ=+0.0012 | Resid PCC=0.2342 | Accept=71.7% | Ep=3
+  Fold  7/10 | GBLUP PCC=0.4763 RMSE=1.0476 | GBT PCC=0.4673 RMSE=1.0388 | Δ=-0.0090 | Resid PCC=0.1058 | Accept=78.3% | Ep=8
+  Fold  8/10 | GBLUP PCC=0.3690 RMSE=0.9976 | GBT PCC=0.3100 RMSE=1.0061 | Δ=-0.0590 | Resid PCC=-0.0107 | Accept=96.7% | Ep=20
+  Fold  9/10 | GBLUP PCC=0.4513 RMSE=0.8472 | GBT PCC=0.4575 RMSE=0.8595 | Δ=+0.0062 | Resid PCC=0.0103 | Accept=100.0% | Ep=1
+  Fold 10/10 | GBLUP PCC=0.7361 RMSE=0.7688 | GBT PCC=0.7238 RMSE=0.7556 | Δ=-0.0122 | Resid PCC=0.1335 | Accept=83.1% | Ep=1
+
+  >>> ENV2 Summary (436s)
+  GBLUP:    PCC = 0.4756 +/- 0.0977  |  RMSE = 0.8958 +/- 0.0973
+  GBT:      PCC = 0.4539 +/- 0.1054  |  RMSE = 0.8981 +/- 0.0983
+  Δ PCC:    -0.0217 +/- 0.0235
+  Resid PCC:0.0046
+  Accept:   84.0%
+
+======================================================================
+  ENV3 — GBLUP-Residual Transformer
+======================================================================
+
+  Fold  1/10 | GBLUP PCC=0.4742 RMSE=0.9909 | GBT PCC=0.4451 RMSE=0.9938 | Δ=-0.0291 | Resid PCC=0.0711 | Accept=83.3% | Ep=23
+  Fold  2/10 | GBLUP PCC=0.3078 RMSE=0.9556 | GBT PCC=0.3327 RMSE=0.9246 | Δ=+0.0248 | Resid PCC=0.1715 | Accept=96.7% | Ep=3
+  Fold  3/10 | GBLUP PCC=0.1868 RMSE=1.1916 | GBT PCC=0.2541 RMSE=1.1956 | Δ=+0.0672 | Resid PCC=0.1707 | Accept=93.3% | Ep=80
+  Fold  4/10 | GBLUP PCC=0.3979 RMSE=0.7415 | GBT PCC=0.4076 RMSE=0.7353 | Δ=+0.0097 | Resid PCC=0.1038 | Accept=70.0% | Ep=1
+  Fold  5/10 | GBLUP PCC=0.4241 RMSE=0.7391 | GBT PCC=0.4160 RMSE=0.7400 | Δ=-0.0082 | Resid PCC=0.0152 | Accept=50.0% | Ep=1
+  Fold  6/10 | GBLUP PCC=0.3574 RMSE=0.9371 | GBT PCC=0.2558 RMSE=0.9752 | Δ=-0.1015 | Resid PCC=0.0269 | Accept=88.3% | Ep=25
+  Fold  7/10 | GBLUP PCC=0.4038 RMSE=0.9868 | GBT PCC=0.4593 RMSE=0.9629 | Δ=+0.0554 | Resid PCC=0.3894 | Accept=81.7% | Ep=9
+  Fold  8/10 | GBLUP PCC=0.2659 RMSE=1.0643 | GBT PCC=0.2595 RMSE=1.0654 | Δ=-0.0064 | Resid PCC=0.0684 | Accept=73.3% | Ep=11
+  Fold  9/10 | GBLUP PCC=0.5428 RMSE=0.8215 | GBT PCC=0.5285 RMSE=0.8390 | Δ=-0.0143 | Resid PCC=-0.1609 | Accept=85.0% | Ep=1
+  Fold 10/10 | GBLUP PCC=0.5213 RMSE=0.8098 | GBT PCC=0.4738 RMSE=0.8193 | Δ=-0.0475 | Resid PCC=0.0672 | Accept=88.1% | Ep=26
+
+  >>> ENV3 Summary (592s)
+  GBLUP:    PCC = 0.3882 +/- 0.1066  |  RMSE = 0.9238 +/- 0.1385
+  GBT:      PCC = 0.3832 +/- 0.0956  |  RMSE = 0.9251 +/- 0.1380
+  Δ PCC:    -0.0050 +/- 0.0467
+  Resid PCC:0.0923
+  Accept:   81.0%
+
+======================================================================
+  ENV4 — GBLUP-Residual Transformer
+======================================================================
+
+  Fold  1/10 | GBLUP PCC=0.3928 RMSE=0.8832 | GBT PCC=0.3660 RMSE=0.8924 | Δ=-0.0269 | Resid PCC=-0.0737 | Accept=68.3% | Ep=5
+  Fold  2/10 | GBLUP PCC=0.4679 RMSE=1.0156 | GBT PCC=0.4549 RMSE=1.0311 | Δ=-0.0129 | Resid PCC=0.0330 | Accept=83.3% | Ep=1
+  Fold  3/10 | GBLUP PCC=0.3959 RMSE=0.8466 | GBT PCC=0.3680 RMSE=0.8477 | Δ=-0.0279 | Resid PCC=0.0140 | Accept=75.0% | Ep=20
+  Fold  4/10 | GBLUP PCC=0.3228 RMSE=0.8515 | GBT PCC=0.2933 RMSE=0.8610 | Δ=-0.0295 | Resid PCC=-0.1258 | Accept=48.3% | Ep=1
+  Fold  5/10 | GBLUP PCC=0.3688 RMSE=0.9078 | GBT PCC=0.3573 RMSE=0.9143 | Δ=-0.0115 | Resid PCC=-0.0015 | Accept=55.0% | Ep=2
+  Fold  6/10 | GBLUP PCC=0.4448 RMSE=0.8361 | GBT PCC=0.4281 RMSE=0.8321 | Δ=-0.0167 | Resid PCC=0.1431 | Accept=96.7% | Ep=46
+  Fold  7/10 | GBLUP PCC=0.3017 RMSE=1.1361 | GBT PCC=0.3497 RMSE=1.1290 | Δ=+0.0480 | Resid PCC=0.1921 | Accept=93.3% | Ep=18
+  Fold  8/10 | GBLUP PCC=0.4741 RMSE=0.9294 | GBT PCC=0.4590 RMSE=0.9362 | Δ=-0.0151 | Resid PCC=-0.0334 | Accept=85.0% | Ep=1
+  Fold  9/10 | GBLUP PCC=0.3757 RMSE=0.8497 | GBT PCC=0.3661 RMSE=0.8506 | Δ=-0.0096 | Resid PCC=-0.0142 | Accept=70.0% | Ep=1
+  Fold 10/10 | GBLUP PCC=0.7289 RMSE=0.8340 | GBT PCC=0.7224 RMSE=0.8489 | Δ=-0.0065 | Resid PCC=-0.0234 | Accept=100.0% | Ep=1
+
+  >>> ENV4 Summary (499s)
+  GBLUP:    PCC = 0.4274 +/- 0.1140  |  RMSE = 0.9090 +/- 0.0926
+  GBT:      PCC = 0.4165 +/- 0.1129  |  RMSE = 0.9143 +/- 0.0911
+  Δ PCC:    -0.0109 +/- 0.0210
+  Resid PCC:0.0110
+  Accept:   77.5%
